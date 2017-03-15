@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_pedidos" android:icon="@drawable/ic_pedidos"
+            android:title="Pedidos"/>
+        <item android:id="@+id/nav_devoluciones" android:icon="@drawable/ic_devoluciones"
+            android:title="Devoluciones"/>
+        <item android:id="@+id/nav_cobranza" android:icon="@drawable/ic_cobranza"
+            android:title="Cobranza"/>
+    </group>
+    <item android:title="Sincronización">
+        <menu>
+            <item android:id="@+id/nav_sincroniza_catalogos" android:icon="@drawable/ic_sincroniza"
+                android:title="Catálogos" />
+            <item android:id="@+id/nav_envia_operaciones" android:icon="@drawable/ic_operaciones"
+                android:title="Operaciones" />
+        </menu>
+    </item>
+    <item android:title="Configuración">
+        <menu>
+            <item android:id="@+id/nav_configuracion" android:icon="@drawable/ic_configuracion"
+                android:title="Ajustes" />
+            <item android:id="@+id/nav_acercade" android:icon="@drawable/ic_acercade"
+                android:title="Acerca De" />
+        </menu>
+    </item>
+
+</menu>

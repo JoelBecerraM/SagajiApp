@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DetallePedidoFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad: "/>
+        <EditText
+            android:id="@+id/edtCantidad"
+            android:layout_width="@dimen/cantidad_width"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:numeric="integer"
+            android:maxLength="4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio: "/>
+        <EditText
+            android:id="@+id/edtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.,"
+            android:enabled="false"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            style="@style/Boton"
+            android:layout_alignParentLeft="true"
+            android:text="Cancelar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

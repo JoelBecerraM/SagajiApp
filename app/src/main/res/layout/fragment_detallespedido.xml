@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DetallePedidoFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/descripcion_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Descripción"/>
+                    <TextView
+                        android:layout_width="@dimen/cantidad_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Cant."/>
+                    <TextView
+                        android:layout_width="@dimen/precio_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Precio"/>
+                    <TextView
+                        android:layout_width="@dimen/precio_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Total"/>
+                    <TextView
+                        android:layout_width="@dimen/ean_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Código"/>
+
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/lstDetalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@drawable/list_selector"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/txtDetalle"
+            style="@style/PrecioEscala"
+            android:layout_width="fill_parent"
+            android:gravity="left"
+            android:padding="@dimen/activity_vertical_margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/codigo_width"
+                style="@style/DiaSemana.Encabezado"
+                android:text="Monto"/>
+            <TextView
+                android:layout_width="@dimen/codigo_width"
+                style="@style/DiaSemana.Encabezado"
+                android:text="Unidades"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtMonto"
+                android:layout_width="@dimen/precio_width"
+                style="@style/PrecioEscala"/>
+            <TextView
+                android:id="@+id/txtPiezas"
+                android:layout_width="@dimen/precio_width"
+                style="@style/PrecioEscala"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/codigo_width"
+                style="@style/DiaSemana.Encabezado"
+                android:text="Disponible"/>
+            <TextView
+                android:layout_width="@dimen/codigo_width"
+                style="@style/DiaSemana.Encabezado"
+                android:text="Excedente"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtSaldoCliente"
+                android:layout_width="@dimen/precio_width"
+                style="@style/PrecioEscala"/>
+            <TextView
+                android:id="@+id/txtExcedente"
+                android:layout_width="@dimen/precio_width"
+                style="@style/PrecioEscala"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            style="@style/Linear_Layout"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/btnEliminar"
+                style="@style/Boton.Pedido.Detalle"
+                android:text="Eliminar" />
+            <Button
+                android:id="@+id/btnModificar"
+                style="@style/Boton.Pedido.Detalle"
+                android:text="Modificar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="@dimen/codigo_width"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Partidas"/>
+                <TextView
+                    android:id="@+id/txtTotalPartidas"
+                    style="@style/PrecioEscala"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="@dimen/precio_width"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Total"/>
+                <TextView
+                    android:id="@+id/txtTotalTotal"
+                    style="@style/PrecioEscala"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            style="@style/Boton"
+            android:layout_alignParentLeft="true"
+            android:text="Regresar" />
+
+        <Button
+            android:id="@+id/btnTerminar"
+            style="@style/Boton"
+            android:layout_alignParentRight="true"
+            android:text="Terminar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

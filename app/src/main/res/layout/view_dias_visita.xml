@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/DiaSemana.Encabezado"
+        android:text="Días de Visita:"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Do"/>
+                <TextView
+                    android:id="@+id/textDo"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Lu"/>
+                <TextView
+                    android:id="@+id/textLu"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Ma"/>
+                <TextView
+                    android:id="@+id/textMa"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Mi"/>
+                <TextView
+                    android:id="@+id/textMi"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Ju"/>
+                <TextView
+                    android:id="@+id/textJu"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Vi"/>
+                <TextView
+                    android:id="@+id/textVi"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana.Encabezado"
+                    android:text="Sa"/>
+                <TextView
+                    android:id="@+id/textSa"
+                    android:layout_width="match_parent"
+                    style="@style/DiaSemana"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

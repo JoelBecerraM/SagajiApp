@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Claves"
+        android:key="valores">
+        <EditTextPreference
+            android:key="filial"
+            android:title="Filial del Intermediario"
+            android:summary="Define la filial a la cual pertenece el intermediario"
+            android:defaultValue="01"/>
+        <EditTextPreference
+            android:key="intermediario"
+            android:title="Intermediario"
+            android:summary="Define la clave del intermediario"
+            android:defaultValue="AMX13"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Conexión"
+        android:key="conexion">
+        <EditTextPreference
+            android:key="url"
+            android:title="URL de Sincronización"
+            android:summary="Define la URL de sincronización de catálogos"
+            android:defaultValue="http://200.53.180.29"/>
+        <EditTextPreference
+            android:key="token"
+            android:title="Token de Sincronización"
+            android:summary="Define el token de sincronización de catálogos"
+            android:defaultValue="password"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Impresión"
+        android:key="impresora">
+        <CheckBoxPreference
+            android:key="imprimir_pedido"
+            android:title="Impresión de Pedido"
+            android:summary="Determina la impresión del pedido al terminarlo"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Parámetros Impresora"
+        android:key="parametrosimpresora">
+        <ListPreference
+            android:key="impresora_driver"
+            android:title="Driver"
+            android:summary="Driver de la impresora"
+            android:dialogTitle="Driver Impresora"
+            android:entries="@array/print_drivers"
+            android:entryValues="@array/print_drivers"
+            android:defaultValue="com.atcloud.android.print.PrinterDriverEmptyImp" />
+        <ListPreference
+            android:key="impresora_metodo"
+            android:title="Método"
+            android:summary="Método de la impresión"
+            android:dialogTitle="Método Impresión"
+            android:entries="@array/print_method"
+            android:entryValues="@array/print_method"
+            android:defaultValue="com.atcloud.android.print.FilePrint" />
+        <EditTextPreference
+            android:key="impresora_nombre"
+            android:title="Nombre"
+            android:summary="Define el nombre de la impresora"
+            android:defaultValue=""/>
+    </PreferenceCategory>
+</PreferenceScreen>

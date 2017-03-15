@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <TextView android:id="@+id/prdescuento"
+        android:layout_width="@dimen/cantidad_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView android:id="@+id/prdescuentomax"
+        android:layout_width="@dimen/cantidad_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView android:id="@+id/plazo"
+        android:layout_width="@dimen/cantidad_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView android:id="@+id/plazomax"
+        android:layout_width="@dimen/cantidad_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView android:id="@+id/monto"
+        android:layout_width="@dimen/precio_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView android:id="@+id/identificador"
+        android:layout_width="@dimen/id_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"/>
+</LinearLayout>

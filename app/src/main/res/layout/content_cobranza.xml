@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_pedidos"
+    tools:context=".CobranzaActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pago:"/>
+
+            <Spinner
+                android:id="@+id/spinnerPago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pago:"/>
+
+            <EditText
+                android:id="@+id/edtPago"
+                android:layout_width="@dimen/precio_width"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:numeric="decimal"
+                android:maxLength="10"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Importe:"/>
+
+            <EditText
+                android:id="@+id/edtImporte"
+                android:layout_width="@dimen/precio_width"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:numeric="decimal"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desc.:"/>
+
+            <EditText
+                android:id="@+id/edtDescuento"
+                android:layout_width="@dimen/cantidad_width"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:numeric="decimal"
+                android:maxLength="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#a5aaab"
+                android:textColor="#ffffff"
+                android:text="Documentos:"/>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/lstDocumentos"
+                    android:scrollbars="horizontal|vertical"
+                    android:listSelector="@drawable/list_selector"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"/>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#a5aaab"
+                android:textColor="#ffffff"
+                android:text="Descuentos:"/>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ListView
+                    android:id="@+id/lstDescuentos"
+                    android:listSelector="@drawable/list_selector"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"/>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#a5aaab"
+                android:textColor="#ffffff"
+                android:text="Detalles:"/>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ListView
+                    android:id="@+id/lstDetalles"
+                    android:listSelector="@drawable/list_selector"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"/>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="@dimen/precio_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:drawable/editbox_background"
+                    android:gravity="right"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/lblTotales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/txtTotal"
+                    android:layout_toLeftOf="@id/txtTotal"
+                    android:text="Totales:"
+                    android:textSize="@dimen/text_size_medium"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Boton.Pedido.Detalle"
+                        android:id="@+id/btnAnteriores"
+                        android:text="&lt;&gt;"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <Button
+                        style="@style/Boton.Pedido.Detalle"
+                        android:id="@+id/btnSalir"
+                        android:text="-&gt;"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <Button
+                        style="@style/Boton.Pedido.Detalle"
+                        android:id="@+id/btnBorrar"
+                        android:text="--"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

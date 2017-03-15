@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/card_horizontal_margin"
+        android:paddingRight="@dimen/card_horizontal_margin"
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id"
+                android:visibility="invisible"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/cliente"
+                    style="@style/DatoCategoria"
+                    android:layout_width="wrap_content"
+                    android:textColor="#0080f5"/>
+
+                <TextView android:id="@+id/razonsocial"
+                    style="@style/DatoCategoria"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/propietario"
+                    style="@style/DatoCategoria"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/DatoCategoria"
+                        android:layout_width="wrap_content"
+                        android:text="Saldo: "
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView android:id="@+id/saldo"
+                        style="@style/DatoCategoria"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/DatoCategoria"
+                        android:layout_width="wrap_content"
+                        android:text="Orden de Visita: "
+                        android:textColor="@color/colorPrimary"/>
+                    <TextView android:id="@+id/orden"
+                        style="@style/DatoCategoria"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- include layout="@layout/view_dias_visita"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" / -->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

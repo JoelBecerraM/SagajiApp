@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Custom styles -->
+    <style name="DatoCategoria" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_text</item>
+        <item name="android:paddingRight">@dimen/padding_text</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="DatoCliente" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_text</item>
+        <item name="android:paddingRight">@dimen/padding_text</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/border_transparente</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="DiaSemana" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/border_transparente</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="DiaSemana.Encabezado">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="PrecioEscala" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/padding_text</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/border_transparente</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="NavHeaderImg">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">@dimen/text_size_small_small</item>
+    </style>
+    <style name="Boton.Pedido">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">@dimen/text_size_small_small</item>
+    </style>
+    <style name="Boton.Pedido.Detalle">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">@dimen/text_size_small_small</item>
+    </style>
+
+    <style name="Linear_Layout">
+        <item name="android:layout_width">@dimen/linear_layout_width</item>
+    </style>
+
+    <style name="EnviaOpChecks">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="PedidoChecks">
+        <item name="android:textSize">@dimen/text_size_small_small</item>
+    </style>
+
+</resources>

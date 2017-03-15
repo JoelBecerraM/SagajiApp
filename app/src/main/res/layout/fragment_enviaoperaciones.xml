@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".EnviaOperacionesFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtOperaciones"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:editable="false"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/chkPedidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedidos"
+                style="@style/EnviaOpChecks"/>
+
+            <CheckBox
+                android:id="@+id/chkDevoluciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devoluciones"
+                style="@style/EnviaOpChecks"/>
+
+            <CheckBox
+                android:id="@+id/chkCobranza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cobranza"
+                style="@style/EnviaOpChecks"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/chkVisitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visitas"
+                style="@style/EnviaOpChecks"/>
+
+            <CheckBox
+                android:id="@+id/chkMensajes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensajes"
+                style="@style/EnviaOpChecks"/>
+
+            <CheckBox
+                android:id="@+id/chkUbicaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicaciones"
+                style="@style/EnviaOpChecks"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnInicia"
+                style="@style/Boton"
+                android:layout_alignParentRight="true"
+                android:text="Inicia Envío"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtLog"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:editable="false"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

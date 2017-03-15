@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".AnterioresFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtFiltro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Filtro."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/cantidad_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Folio"/>
+                    <TextView
+                        android:layout_width="@dimen/cantidad_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Estado"/>
+                    <TextView
+                        android:layout_width="@dimen/fecha_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Fecha"/>
+                    <TextView
+                        android:layout_width="@dimen/cantidad_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Cliente"/>
+                    <TextView
+                        android:layout_width="@dimen/descripcion_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Nombre"/>
+                    <TextView
+                        android:layout_width="@dimen/cantidad_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Partidas"/>
+                    <TextView
+                        android:layout_width="@dimen/cantidad_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Cantidad"/>
+                    <TextView
+                        android:layout_width="@dimen/precio_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Importe"/>
+                    <TextView
+                        android:layout_width="@dimen/precio_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Iva"/>
+                    <TextView
+                        android:layout_width="@dimen/precio_width"
+                        style="@style/DiaSemana.Encabezado"
+                        android:text="Total"/>
+
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/lstDetalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@drawable/list_selector"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total de Registros Listados: "/>
+
+        <EditText
+            android:id="@+id/edtTotalRegistros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/radEnviados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Enviados"
+                style="@style/EnviaOpChecks"/>
+            <RadioButton android:id="@+id/radPorEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Por Enviar"
+                style="@style/EnviaOpChecks"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBorrar"
+            style="@style/Boton"
+            android:layout_weight="1"
+            android:text="Borrar" />
+        <Button
+            android:id="@+id/btnReenviar"
+            style="@style/Boton"
+            android:layout_weight="1"
+            android:text="Reenviar" />
+        <Button
+            android:id="@+id/btnDetalles"
+            style="@style/Boton"
+            android:layout_weight="1"
+            android:text="Detalles" />
+        <Button
+            android:id="@+id/btnAbrir"
+            style="@style/Boton"
+            android:layout_weight="1"
+            android:text="Abrir" />
+        <Button
+            android:id="@+id/btnImprimir"
+            style="@style/Boton"
+            android:layout_weight="1"
+            android:text="Imprimir" />
+
+    </LinearLayout>
+
+</LinearLayout>

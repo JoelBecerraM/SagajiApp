@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/descripcion_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Descripcion"
+            android:background="@android:drawable/button_onoff_indicator_off"/>
+        <TextView android:id="@+id/piezas"
+            android:layout_width="@dimen/cantidad_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Cantidad"
+            android:background="@android:drawable/button_onoff_indicator_off"
+            android:gravity="right"/>
+        <TextView android:id="@+id/documento"
+            android:layout_width="@dimen/precio_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Documento"
+            android:background="@android:drawable/button_onoff_indicator_off"
+            android:gravity="center_horizontal"/>
+        <TextView android:id="@+id/codigo"
+            android:layout_width="@dimen/codigo_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Codigo"
+            android:background="@android:drawable/button_onoff_indicator_off"/>
+        <TextView android:id="@+id/causa"
+            android:layout_width="@dimen/cantidad_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Causa"
+            android:background="@android:drawable/button_onoff_indicator_off"
+            android:gravity="right"/>
+        <TextView android:id="@+id/descuento"
+            android:layout_width="@dimen/cantidad_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Desc."
+            android:background="@android:drawable/button_onoff_indicator_off"
+            android:gravity="right"/>
+        <TextView android:id="@+id/tipo"
+            android:layout_width="@dimen/cantidad_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Tipo"
+            android:background="@android:drawable/button_onoff_indicator_off"
+            android:gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

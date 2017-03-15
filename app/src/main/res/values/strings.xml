@@ -1,0 +1,75 @@
+<resources>
+    <string name="version_date">2017-03-14</string>
+    <string name="version_number">0.0.2</string>
+    <string name="app_name">SagajiApp</string>
+    <string name="navigation_drawer_open">Abrir la barra de navegacion</string>
+    <string name="navigation_drawer_close">Cerrar la barra de navegacion</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_calculadora">Calculadora</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_rotate">Rotar Pantalla</string>
+    <string name="action_back">Atras</string>
+    <string name="title_activity_clientes">ClientesActivity</string>
+    <string name="title_activity_sincronizacion">SincronizacionActivity</string>
+    <string name="title_activity_cliente">ClienteActivity</string>
+    <string name="title_activity_pedidos">PedidosActivity</string>
+    <string name="title_activity_pedidos_guardar">PedidosGuardarActivity</string>
+    <string name="title_activity_devoluciones">DevolucionesActivity</string>
+    <string name="title_activity_devoluciones_guardar">DevolucionesGuardarActivity</string>
+    <string name="title_activity_cobranza">CobranzaActivity</string>
+    <string name="title_activity_cobranza_guardar">CobranzaGuardarActivity</string>
+    <string name="title_activity_cobranza_referencia">CobranzaReferenciaActivity</string>
+    <string name="title_activity_configuracion">ConfiguracionActivity</string>
+    <string name="title_activity_anteriores">AnterioresActivity</string>
+    <string name="title_activity_acerca_de">AcercaDeActivity</string>
+    <string name="title_activity_envia_operaciones">EnviaOperacionesActivity</string>
+    <string-array name="categorias_tipos">
+        <item>Armadora - Modelo - Descripcion</item>
+        <item>Linea - Descripcion - Modelo</item>
+        <item>Descripcion - Modelo - Linea</item>
+        <item>Modelo - Descripcion - Periodo</item>
+    </string-array>
+    <string-array name="buscar_en">
+        <item>Catalogo por Codigo</item>
+        <item>Catalogo por Descripcion</item>
+        <item>Ofertas</item>
+        <item>Producto Nuevo</item>
+        <item>Producto Promocion</item>
+        <item>Lento Movimiento</item>
+        <item>Unicar</item>
+        <item>Producto 80/20</item>
+    </string-array>
+    <string-array name="pagos_cobranza">
+        <item>Efectivo</item>
+        <item>Ficha de Deposito</item>
+        <item>Cheque</item>
+        <item>Cheque Posfechado</item>
+        <item>Transferencia</item>
+    </string-array>
+    <string-array name="bancos_cobranza">
+        <item>Banamex</item>
+        <item>Bancomer</item>
+        <item>HSBC</item>
+        <item>Inverlant</item>
+        <item>Banorte</item>
+        <item>Santander</item>
+        <item>Inbursa</item>
+        <item>IXE</item>
+        <item>Afirme</item>
+        <item>Banejercito</item>
+        <item>Banbajio</item>
+        <item>Otros</item>
+    </string-array>
+    <array name="print_drivers">
+        <item>com.atcloud.android.print.PrinterDriverBixolonImp</item>
+        <item>com.atcloud.android.print.PrinterDriverApex2Imp</item>
+        <item>com.atcloud.android.print.PrinterDriverEmptyImp</item>
+        <item>com.atcloud.android.print.PrinterDriverExtechImp</item>
+        <item>com.atcloud.android.print.PrinterDriverPCLImp</item>
+    </array>
+    <array name="print_method">
+        <item>com.atcloud.android.print.FilePrint</item>
+        <item>com.atcloud.android.print.EmailPrint</item>
+        <item>com.atcloud.android.bluetooth.BluetoothPrint</item>
+    </array>
+</resources>

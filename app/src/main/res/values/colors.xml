@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#17134b</color>
+    <color name="colorPrimaryDark">#17134b</color>
+    <color name="colorAccent">#ed1c24</color>
+    <color name="colorGrayLigth">#f0f0f5</color>
+    <color name="colorGrayMedium">#c2c2d6</color>
+    <color name="colorGrayDark">#52527a</color>
+    <color name="colorBlueLigth">#e6faff</color>
+    <color name="colorCuandrante1">#0000FF</color>
+    <color name="colorCuandrante2">#FFDD00</color>
+    <color name="colorCuandrante3">#AA3BBB</color>
+    <color name="colorCuandrante4">#EE4B4C</color>
+</resources>
